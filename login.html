@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube</title>
+    <link rel="stylesheet" href="CSS/login.css" />
     <link
       rel="icon"
       href="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png"
@@ -15,77 +16,45 @@
   </head>
 
   <body>
-    <div
-      style="
-        background-image: url(https://www.sagatraining.ca/wp-content/uploads/2018/10/background-images-for-login-form-8.jpg);
-        width: 100%;
-        height: 600px;
-      "
-    >
-      <span style="text-align: center"> Login Page</span>
+    <div id="Login">
+      <span> Login Page</span>
       <div
-        style="
-          text-align: center;
-          margin-top: 150px;
-          background-color: rgb(201, 230, 255);
-          width: 30%;
-          margin-left: 420px;
-          height: 350px;
-          border-radius: 40px;
-        "
+        class="create"
       >
-        <h1
-          style="
-            padding-top: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(42, 95, 165);
-          "
-        >
-          <i class="fa-regular fa-user"></i> LOGIN PAGE
-        </h1>
-        <form>
-          <label for="username" style="font-size: 20px"> Username:</label><br />
+        <h1><i class="fa-regular fa-user"></i> LOGIN PAGE</h1>
+        <form autocomplete="on">
+          <label for="fname"> First Name</label><br />
+          <input type="text" id="fname" name="username" autofocus /> <br />
+          <label for="lname">Last name</label><br />
+          <input type="text" id="lname" name="lname" /><br />
+          <label for="pwd">Password</label><br />
+          <input type="password" id="pwd" name="pwd" /><br />
+          <label>Date of birth</label><br />
+          <input type="date" min="2005-01-01" /><br /><br />
+          <label for="gender"> Gender :</label> <br>
+          <input type="radio" id="female" name="gender" value="FEMALE" />
+          <label for="female">Female</label>
+          <input type="radio" id="male" name="gender" value="MALE" />
+          <label for="male">Male</label>
           <input
-            type="text"
-            id="username"
-            name="username"
-            style="border-radius: 20px; border: 1px solid white"
-          /><br />
-          <label for="pwd" style="font-size: 20px">Password:</label><br />
+            type="radio"
+            id="custom"
+            name="gender"
+            value="CUSTOM"
+          />
+          <label for="custom">Custom</label><br>
+          <input class="reset" type="reset" value="RESET" /> <br />
           <input
-            type="password"
-            id="pwd"
-            name="pwd"
-            style="border-radius: 20px; border: 1px solid white"
-          /><br /><br />
-          <input
+            class="submit"
             type="button"
             onclick="alert('You have successfully registered!')"
             value="SUBMIT"
-            style="
-              margin-top: 20px;
-              padding: 15px;
-              width: 130px;
-              border-radius: 20px;
-              border: 1px solid rgb(0, 255, 0);
-              background-color: rgb(0, 255, 0);
-              color: white;
-              font-weight: 900;
-              font-size: 17px;
-              cursor: pointer;
-            "
           />
         </form>
         <div>
           <a
+            class="backto"
             href="./index.html"
-            style="
-              text-decoration: none;
-              margin-top: 20px;
-              color: rgb(166, 166, 166);
-              font-size: 20px;
-              display: inline-block;
-            "
             ><i class="fa-solid fa-arrow-left"></i> Back to previous page</a
           >
         </div>

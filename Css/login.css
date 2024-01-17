@@ -1,0 +1,69 @@
+#Login {
+  background-image: url(https://www.sagatraining.ca/wp-content/uploads/2018/10/background-images-for-login-form-8.jpg);
+  width: 100%;
+  height: 700px;
+}
+
+#Login h1 {
+  padding-top: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(42, 95, 165);
+}
+
+#Login span{
+    text-align: center;
+}
+
+.create {
+  text-align: center;
+  margin-top: 100px;
+  background-color: rgb(201, 230, 255);
+  width: 30%;
+  margin-left: 420px;
+  height: 550px;
+  border-radius: 40px;
+}
+
+.create input {
+  border-radius: 20px;
+  border: 1px solid black;
+  margin-top: 6px;
+}
+
+.reset {
+  padding: 15px;
+  width: 130px;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.submit {
+  padding: 15px;
+  width: 130px;
+  border-radius: 20px;
+  border: 1px solid rgb(0, 255, 0);
+  background-color: rgb(0, 255, 0);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+form label {
+  font-size: 20px;
+}
+
+.backto {
+  text-decoration: none;
+  margin-top: 20px;
+  color: rgb(166, 166, 166);
+  font-size: 20px;
+  display: inline-block;
+}
+
+.backto:hover{
+    color: brown;
+}
