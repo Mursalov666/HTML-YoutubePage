@@ -1,6 +1,189 @@
-header{
+.container {
+  padding: 0px 2rem;
+}
+
+header {
   padding: 30px;
   margin-bottom: 30px;
   font-size: 25px;
   margin-left: 20px;
+}
+
+#menuicon {
+  color: black;
+}
+
+#youtubeicon {
+  color: red;
+  padding: 15px;
+}
+
+header input {
+  padding: 8px;
+  margin: 30px;
+  width: 460px;
+  border-radius: 15px;
+  border: 1px solid red;
+}
+
+header button {
+  border-radius: 15px;
+  border: 1px solid red;
+}
+
+#Signin {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#User {
+  color: rgb(255, 0, 0);
+  margin: 4px;
+  padding: 4px;
+}
+
+header ul {
+  background-color: rgb(255, 0, 0);
+}
+
+header ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#Adds {
+  margin-left: 20px;
+}
+
+#VideoTitle {
+  font-size: 50px;
+}
+
+.Subscribe {
+  padding: 15px;
+  margin: 20px;
+  border-color: red;
+  border-radius: 15px;
+}
+
+#AboutVideo button {
+  border-radius: 15px;
+  margin-left: 5px;
+}
+
+#description {
+  background-color: darkgray;
+  width: 69%;
+  display: inline-block;
+}
+
+.right-content {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.right-inside-element {
+  margin-left: 40px;
+}
+
+.right-videos {
+  display: inline-block;
+}
+
+.left-content {
+  width: 69%;
+  display: inline-block;
+}
+
+.left-content span {
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Sortby {
+  border: 1px solid red;
+  border-radius: 15px;
+  margin-top: 5px;
+  margin-left: 438px;
+  padding: 15px;
+}
+
+.left-content input {
+  width: 800px;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+#comments {
+  background-color: darkgray;
+  width: 820px;
+}
+
+#comments img {
+  width: 30px;
+  height: 30px;
+}
+
+#comments button {
+  font-size: 30px;
+  border-radius: 15px;
+}
+
+#comments i {
+  font-size: 18px;
+}
+
+.right-content2 {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.music-description {
+  display: inline-block;
+}
+
+.music-description span {
+  font-size: 18px;
+}
+
+.music-description p {
+  font-size: 12px;
+}
+
+#about {
+  background-color: rgb(174, 0, 0);
+  padding: 15px;
+  width: 96%;
+}
+
+#about a {
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: rgb(47, 183, 47);
+}
+
+#about i {
+  color: #fff;
+}
+
+#about span {
+  margin-left: 290px;
+  color: #fff;
+}
+
+#scrollTop {
+  cursor: pointer;
+  background-color: lightblue;
+  padding: 6px;
+  margin-left: 71rem;
+  display: right;
+  border-radius: 15px;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="" />
     <link
       rel="icon"
       href="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png"
@@ -13,90 +13,61 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="CSS/index.css" />
   </head>
 
   <div class="container">
-    <header
-    >
-      <i style="color: black" class="fa-solid fa-bars"></i>
+    <header>
+      <i id="menuicon" class="fa-solid fa-bars"></i>
 
-      <i style="color: red; padding: 15px" class="fa-brands fa-youtube"
-        >YouTube</i
-      >
+      <i id="youtubeicon" class="fa-brands fa-youtube">YouTube</i>
 
-      <input
-        style="
-          padding: 8px;
-          margin: 30px;
-          width: 460px;
-          border-radius: 15px;
-          border: 1px solid red;
-        "
-        type="search"
-        placeholder="Search..."
-      />
+      <input type="search" placeholder="Search..." />
 
-      <button style="border-radius: 15px; border: 1px solid red">
+      <button>
         <i
           style="margin: 4px; padding: 4px"
           class="fa-solid fa-magnifying-glass"
         ></i>
       </button>
 
-      <button style="border-radius: 15px; border: 1px solid red">
+      <button>
         <i style="margin: 4px; padding: 4px" class="fa-solid fa-microphone"></i>
       </button>
 
-      <button style="border-radius: 15px; border: 1px solid red">
+      <button>
         <i
           style="margin: 4px; padding: 4px"
           class="fa-solid fa-folder-plus"
         ></i>
       </button>
 
-      <button style="border-radius: 15px; border: 1px solid red">
+      <button>
         <i style="margin: 4px; padding: 4px" class="fa-solid fa-bell"></i>
       </button>
 
-      <button style="border-radius: 15px; border: 1px solid red">
-        <a
-          href="./login.html"
-          style="text-decoration: none; font-weight: bold"
-          target="_blank"
-          ><i
-            style="color: rgb(255, 0, 0); margin: 4px; padding: 4px"
-            class="fa-solid fa-user"
-          ></i>
-          Sign in</a
+      <button>
+        <a id="Signin" href="./login.html" target="_blank"
+          ><i id="User" class="fa-solid fa-user"></i> Sign in</a
         >
       </button>
 
-      <ul type="none" style="background-color: rgb(255, 0, 0)">
+      <ul type="none">
         <li>
-          <a
-            style="text-decoration: none; color: rgb(255, 255, 255)"
-            href="#description"
+          <a href="#description"
             ><i class="fa-solid fa-paperclip"></i> Description</a
           >
         </li>
         <li>
-          <a
-            style="text-decoration: none; color: rgb(255, 255, 255)"
-            href="#comments"
-            ><i class="fa-solid fa-comments"></i> Comments</a
-          >
+          <a href="#comments"><i class="fa-solid fa-comments"></i> Comments</a>
         </li>
         <li>
-          <a
-            style="text-decoration: none; color: rgb(255, 255, 255)"
-            href="#about"
-            ><i class="fa-solid fa-bars"></i> About</a
-          >
+          <a href="#about"><i class="fa-solid fa-bars"></i> About</a>
         </li>
       </ul>
     </header>
 
-    <body style="margin-left: 45px">
+    <body>
       <iframe
         width="800"
         height="467"
@@ -107,50 +78,35 @@
         allowfullscreen
       ></iframe>
       <img
-        style="margin-left: 20px"
+        id="Adds"
         src="https://hookmedia.com.au/wp-content/uploads/2018/06/ad_spend_688-ab.jpg"
         alt="Image1"
         width="330px"
         height="465px"
       />
 
-      <em
-        ><span style="font-size: 50px"
-          >Sezen Aksu - Son Bakış | Lyrics</span
-        ></em
-      >
-      <br />
+      <div id="AboutVideo">
+        <em><span id="VideoTitle">Sezen Aksu - Son Bakış | Lyrics</span></em>
+        <br />
 
-      <i class="fa-regular fa-user"> JANAGA</i>
-      <button
-        style="
-          padding: 15px;
-          margin: 20px;
-          border-color: red;
-          border-radius: 15px;
-        "
-      >
-        SUBSCRIBE
-      </button>
-      <button style="border-radius: 15px; margin-left: 5px">
-        <i style="padding: 15px" class="fa-solid fa-thumbs-up"> 60 K</i> |
-        <i class="fa-solid fa-thumbs-down"></i>
-      </button>
-      <button style="border-radius: 15px; margin-left: 5px">
-        <i style="padding: 15px" class="fa-solid fa-share"> Share</i>
-      </button>
-      <button style="border-radius: 15px; margin-left: 5px">
-        <i style="padding: 15px" class="fa-solid fa-ellipsis"></i>
-      </button>
-      <br />
-      <span style="font-weight: 900">Subscribes 710K</span>
-      <br />
+        <i class="fa-regular fa-user"> JANAGA</i>
+        <button class="Subscribe">SUBSCRIBE</button>
+        <button>
+          <i style="padding: 15px" class="fa-solid fa-thumbs-up"> 60 K</i> |
+          <i class="fa-solid fa-thumbs-down"></i>
+        </button>
+        <button>
+          <i style="padding: 15px" class="fa-solid fa-share"> Share</i>
+        </button>
+        <button>
+          <i style="padding: 15px" class="fa-solid fa-ellipsis"></i>
+        </button>
+        <br />
+        <span style="font-weight: 900">Subscribes 710K</span>
+        <br />
+      </div>
 
-      <div
-        class="left-content"
-        style="background-color: darkgray; width: 69%; display: inline-block"
-        id="description"
-      >
+      <div id="description">
         <h4>11M views 2 months ago #janaga #moodvideo #посути</h4>
         <p>
           Ближайшие концерты и выступления👇👇👇<br />
@@ -180,88 +136,58 @@
         </p>
       </div>
 
-      <div
-        class="right-content"
-        style="display: inline-block; width: 30%; vertical-align: top"
-      >
-        <div class="right-inside-element" style="margin-left: 40px">
+      <div class="right-content">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
       </div>
 
-      <div class="left-content2" style="width: 69%; display: inline-block">
-        <span
-          style="
-            font-size: 25px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-          "
-          ><b>2,150 Comments</b></span
-        >
-        <button
-          style="
-            border: 1px solid red;
-            border-radius: 15px;
-            margin-top: 5px;
-            margin-left: 438px;
-          "
-        >
-          <i style="padding: 15px" class="fa-solid fa-arrow-up-wide-short">
-            Sort by</i
-          >
+      <div class="left-content">
+        <span><b>2,150 Comments</b></span>
+        <button class="Sortby">
+          <i class="fa-solid fa-arrow-up-wide-short"> Sort by</i>
         </button>
         <br />
-        <input
-          style="
-            width: 800px;
-            height: 50px;
-            border: none;
-            border-radius: 15px;
-            margin-bottom: 10px;
-            margin-top: 5px;
-          "
-          type="text"
-          placeholder="    Add comment..."
-        />
-        <div style="background-color: darkgray; width: 800px" id="comments">
+        <input type="text" placeholder="    Add comment..." />
+        <div id="comments">
           <div>
             <img
-              style="width: 30px; height: 30px"
               src="https://png.pngtree.com/png-vector/20190214/ourmid/pngtree-vector-gallery-icon-png-image_515223.jpg"
               alt="user"
             />
@@ -273,18 +199,17 @@
               omnis consequatur numquam voluptatibus error expedita deleniti,
               vel perferendis aperiam voluptates illum nisi.
             </h5>
-            <button style="font-size: 30px; border-radius: 15px">
+            <button>
               <i class="fa-solid fa-thumbs-up"></i> |
               <i class="fa-solid fa-thumbs-down"></i>
             </button>
-            <button style="font-size: 30px; border-radius: 15px">
-              <i style="font-size: 15px" class="fa-solid fa-reply"> Reply</i>
+            <button>
+              <i class="fa-solid fa-reply"> Reply</i>
             </button>
           </div>
-          <hr>
+          <hr />
           <div>
             <img
-              style="width: 30px; height: 30px"
               src="https://png.pngtree.com/png-vector/20190214/ourmid/pngtree-vector-gallery-icon-png-image_515223.jpg"
               alt="user"
             />
@@ -296,18 +221,17 @@
               omnis consequatur numquam voluptatibus error expedita deleniti,
               vel perferendis aperiam voluptates illum nisi.
             </h5>
-            <button style="font-size: 30px; border-radius: 15px">
+            <button>
               <i class="fa-solid fa-thumbs-up"></i> |
               <i class="fa-solid fa-thumbs-down"></i>
             </button>
-            <button style="font-size: 30px; border-radius: 15px">
-              <i style="font-size: 15px" class="fa-solid fa-reply"> Reply</i>
+            <button>
+              <i class="fa-solid fa-reply"> Reply</i>
             </button>
           </div>
-          <hr>
+          <hr />
           <div>
             <img
-              style="width: 30px; height: 30px"
               src="https://png.pngtree.com/png-vector/20190214/ourmid/pngtree-vector-gallery-icon-png-image_515223.jpg"
               alt="user"
             />
@@ -319,18 +243,17 @@
               omnis consequatur numquam voluptatibus error expedita deleniti,
               vel perferendis aperiam voluptates illum nisi.
             </h5>
-            <button style="font-size: 30px; border-radius: 15px">
+            <button>
               <i class="fa-solid fa-thumbs-up"></i> |
               <i class="fa-solid fa-thumbs-down"></i>
             </button>
-            <button style="font-size: 30px; border-radius: 15px">
+            <button>
               <i style="font-size: 15px" class="fa-solid fa-reply"> Reply</i>
             </button>
           </div>
-          <hr>
+          <hr />
           <div>
             <img
-              style="width: 30px; height: 30px"
               src="https://png.pngtree.com/png-vector/20190214/ourmid/pngtree-vector-gallery-icon-png-image_515223.jpg"
               alt="user"
             />
@@ -342,18 +265,17 @@
               omnis consequatur numquam voluptatibus error expedita deleniti,
               vel perferendis aperiam voluptates illum nisi.
             </h5>
-            <button style="font-size: 30px; border-radius: 15px">
+            <button>
               <i class="fa-solid fa-thumbs-up"></i> |
               <i class="fa-solid fa-thumbs-down"></i>
             </button>
-            <button style="font-size: 30px; border-radius: 15px">
-              <i style="font-size: 15px" class="fa-solid fa-reply"> Reply</i>
+            <button>
+              <i class="fa-solid fa-reply"> Reply</i>
             </button>
           </div>
-          <hr>
+          <hr />
           <div>
             <img
-              style="width: 30px; height: 30px"
               src="https://png.pngtree.com/png-vector/20190214/ourmid/pngtree-vector-gallery-icon-png-image_515223.jpg"
               alt="user"
             />
@@ -365,18 +287,17 @@
               omnis consequatur numquam voluptatibus error expedita deleniti,
               vel perferendis aperiam voluptates illum nisi.
             </h5>
-            <button style="font-size: 30px; border-radius: 15px">
+            <button>
               <i class="fa-solid fa-thumbs-up"></i> |
               <i class="fa-solid fa-thumbs-down"></i>
             </button>
-            <button style="font-size: 30px; border-radius: 15px">
-              <i style="font-size: 15px" class="fa-solid fa-reply"> Reply</i>
+            <button>
+              <i class="fa-solid fa-reply"> Reply</i>
             </button>
           </div>
-          <hr>
+          <hr />
           <div>
             <img
-              style="width: 30px; height: 30px"
               src="https://png.pngtree.com/png-vector/20190214/ourmid/pngtree-vector-gallery-icon-png-image_515223.jpg"
               alt="user"
             />
@@ -388,18 +309,17 @@
               omnis consequatur numquam voluptatibus error expedita deleniti,
               vel perferendis aperiam voluptates illum nisi.
             </h5>
-            <button style="font-size: 30px; border-radius: 15px">
+            <button>
               <i class="fa-solid fa-thumbs-up"></i> |
               <i class="fa-solid fa-thumbs-down"></i>
             </button>
-            <button style="font-size: 30px; border-radius: 15px">
-              <i style="font-size: 15px" class="fa-solid fa-reply"> Reply</i>
+            <button>
+              <i class="fa-solid fa-reply"> Reply</i>
             </button>
           </div>
-          <hr>
+          <hr />
           <div>
             <img
-              style="width: 30px; height: 30px"
               src="https://png.pngtree.com/png-vector/20190214/ourmid/pngtree-vector-gallery-icon-png-image_515223.jpg"
               alt="user"
             />
@@ -411,18 +331,17 @@
               omnis consequatur numquam voluptatibus error expedita deleniti,
               vel perferendis aperiam voluptates illum nisi.
             </h5>
-            <button style="font-size: 30px; border-radius: 15px">
+            <button>
               <i class="fa-solid fa-thumbs-up"></i> |
               <i class="fa-solid fa-thumbs-down"></i>
             </button>
-            <button style="font-size: 30px; border-radius: 15px">
-              <i style="font-size: 15px" class="fa-solid fa-reply"> Reply</i>
+            <button>
+              <i class="fa-solid fa-reply"> Reply</i>
             </button>
           </div>
-          <hr>
+          <hr />
           <div>
             <img
-              style="width: 30px; height: 30px"
               src="https://png.pngtree.com/png-vector/20190214/ourmid/pngtree-vector-gallery-icon-png-image_515223.jpg"
               alt="user"
             />
@@ -434,18 +353,17 @@
               omnis consequatur numquam voluptatibus error expedita deleniti,
               vel perferendis aperiam voluptates illum nisi.
             </h5>
-            <button style="font-size: 30px; border-radius: 15px">
+            <button>
               <i class="fa-solid fa-thumbs-up"></i> |
               <i class="fa-solid fa-thumbs-down"></i>
             </button>
-            <button style="font-size: 30px; border-radius: 15px">
-              <i style="font-size: 15px" class="fa-solid fa-reply"> Reply</i>
+            <button>
+              <i class="fa-solid fa-reply"> Reply</i>
             </button>
           </div>
-          <hr>
+          <hr />
           <div>
             <img
-              style="width: 30px; height: 30px"
               src="https://png.pngtree.com/png-vector/20190214/ourmid/pngtree-vector-gallery-icon-png-image_515223.jpg"
               alt="user"
             />
@@ -457,293 +375,276 @@
               omnis consequatur numquam voluptatibus error expedita deleniti,
               vel perferendis aperiam voluptates illum nisi.
             </h5>
-            <button style="font-size: 30px; border-radius: 15px">
+            <button>
               <i class="fa-solid fa-thumbs-up"></i> |
               <i class="fa-solid fa-thumbs-down"></i>
             </button>
-            <button style="font-size: 30px; border-radius: 15px">
-              <i style="font-size: 15px" class="fa-solid fa-reply"> Reply</i>
+            <button>
+              <i class="fa-solid fa-reply"> Reply</i>
             </button>
           </div>
-          <hr>
-          
+          <hr />
         </div>
       </div>
 
-      <div
-        class="right-content2"
-        style="display: inline-block; width: 30%; vertical-align: top"
-      >
-        <div class="right-inside-element" style="margin-left: 40px">
+      <div class="right-content2">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
-        <div class="right-inside-element" style="margin-left: 40px">
+        <div class="right-inside-element">
           <img
             src="https://wallpapercave.com/wp/wp9133356.jpg"
             alt="Image1"
             width="150px"
             height="85px"
           />
-          <div style="display: inline-block">
-            <p style="font-size: 17px">Playlist of best tracks</p>
-            <p style="font-size: 12px">Best Channel</p>
-            <p style="font-size: 12px">990K views | 2 years ago</p>
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
+          </div>
+        </div>
+        <div class="right-inside-element">
+          <img
+            src="https://wallpapercave.com/wp/wp9133356.jpg"
+            alt="Image1"
+            width="150px"
+            height="85px"
+          />
+          <div class="music-description">
+            <span>Playlist of best tracks</span>
+            <p>Best Channel</p>
+            <p>990K views | 2 years ago</p>
           </div>
         </div>
       </div>
     </body>
 
     <footer>
-      <div
-        id="about"
-        style="background-color: rgb(174, 0, 0); padding: 15px; width: 96%"
-      >
-        <a
-          style="
-            font-weight: bold;
-            font-size: 30px;
-            color: #fff;
-            border-radius: 10px;
-            text-decoration: none;
-            background-color: rgb(47, 183, 47);
-          "
-          target="_blank"
-          href="./about.html"
+      <div id="about">
+        <a target="_blank" href="./about.html"
           >Go to ABOUT Page <i class="fa-solid fa-arrow-right"></i
         ></a>
         <p>
-          <i style="color: #fff" class="fa-solid fa-location-dot"> Adress:</i>
+          <i class="fa-solid fa-location-dot"> Adress:</i>
           Kolathur ramankulam- Malappuram Dt Kerala 679338
         </p>
+        <p><i class="fa-solid fa-phone"> Contact:</i> +91 90904500112</p>
         <p>
-          <i style="color: #fff" class="fa-solid fa-phone"> Contact:</i> +91
-          90904500112
-        </p>
-        <p>
-          <i style="color: #fff" class="fa-solid fa-envelope"> Mail:</i>
+          <i class="fa-solid fa-envelope"> Mail:</i>
           mail@1234567.com
         </p>
-        <span style="margin-left: 290px; color: #fff"
+        <span
           ><i class="fa-solid fa-copyright"></i>Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Totam, voluptatem.</span
         >
       </div>
-      <a
-        href="#top"
-        style="
-          cursor: pointer;
-          background-color: lightblue;
-          padding: 6px;
-          margin-left: 71rem;
-          display: right;
-          border-radius: 15px;
-        "
-      >
+      <a id="scrollTop" href="#top">
         <i class="fa-solid fa-arrow-up"></i>
       </a>
     </footer>
