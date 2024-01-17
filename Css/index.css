@@ -9,6 +9,11 @@ header {
   margin-left: 20px;
 }
 
+header i{
+  margin: 4px;
+  padding: 4px;
+}
+
 #menuicon {
   color: black;
 }
@@ -66,9 +71,18 @@ header ul li a {
   border-radius: 15px;
 }
 
+#AboutVideo i{
+  padding: 15px;
+}
+
 #AboutVideo button {
   border-radius: 15px;
   margin-left: 5px;
+}
+
+#AboutVideo span{
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #description {
