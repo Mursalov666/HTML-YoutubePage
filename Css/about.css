@@ -14,11 +14,11 @@ header i {
   padding: 4px;
 }
 
-#menuicon {
+#menu-icon {
   color: black;
 }
 
-#youtubeicon {
+#youtube-icon {
   color: red;
   padding: 15px;
 }
@@ -36,12 +36,18 @@ header button {
   border: 1px solid red;
 }
 
-#Signin {
+header button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: red;
+}
+
+#sign-in {
   text-decoration: none;
   font-weight: bold;
 }
 
-#User {
+#user {
   color: rgb(255, 0, 0);
   margin: 4px;
   padding: 4px;
@@ -62,23 +68,23 @@ header button {
   color: rgb(189, 226, 43);
 }
 
-#Developers h3 {
+#developers h3 {
   background-color: rgb(226, 43, 58);
   color: #fff;
   font-size: 40px;
   text-align: center;
 }
 
-#Developers ul {
+#developers ul {
   background-color: rgb(113, 43, 226);
   padding: 105px;
 }
 
-#Developers li {
+#developers li {
   margin-top: 60px;
 }
 
-#Developers li a {
+#developers li a {
   text-decoration: none;
   font-size: 30px;
   color: #fff;
@@ -87,30 +93,26 @@ header button {
   border-radius: 20px;
 }
 
-#Developers li a:hover {
+#developers li a:hover {
   background-color: rgb(109, 21, 21);
 }
 
-#Image {
+#backgr-image {
   background-image: url(https://rottenswamp.ru/images/111111-2_6c7ec.jpg);
   vertical-align: bottom;
   width: 100%;
   height: 1000px;
 }
 
-#Image span {
+.image-text {
   color: #fff;
-  font-size: 30px;
+  font-size: 60px;
   padding: 25px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: serif;
   font-weight: bold;
 }
 
-#Image span:hover {
-  color: red;
-}
-
-#CV1 {
+#cv1 {
   border: 4px solid black;
   margin-top: 30px;
   background-color: blanchedalmond;
@@ -122,13 +124,13 @@ header button {
   margin-left: 180px;
 }
 
-#CV1 hr {
+#cv1 hr {
   height: 5px;
   background-color: black;
   width: 70%;
 }
 
-#CV1 h1 {
+#cv1 h1 {
   margin-top: 50px;
   text-align: center;
   text-decoration: underline;
@@ -144,7 +146,7 @@ header button {
   font-weight: 100;
 }
 
-.Table {
+.about-table {
   margin-left: 340px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -187,55 +189,55 @@ table td {
   font-weight: bold;
 }
 
-#CV2 {
+#cv2 {
   border: 4px solid black;
   margin-top: 30px;
   background-color: blanchedalmond;
 }
 
-#CV2 hr {
+#cv2 hr {
   height: 5px;
   background-color: black;
   width: 70%;
 }
 
-#CV2 h1 {
+#cv2 h1 {
   margin-top: 50px;
   text-align: center;
   text-decoration: underline;
 }
 
-#CV3 {
+#cv3 {
   border: 4px solid black;
   margin-top: 30px;
   background-color: blanchedalmond;
 }
 
-#CV3 hr {
+#cv3 hr {
   height: 5px;
   background-color: black;
   width: 70%;
 }
 
-#CV3 h1 {
+#cv3 h1 {
   margin-top: 50px;
   text-align: center;
   text-decoration: underline;
 }
 
-#CV4 {
+#cv4 {
   border: 4px solid black;
   margin-top: 30px;
   background-color: blanchedalmond;
 }
 
-#CV4 hr {
+#cv4 hr {
   height: 5px;
   background-color: black;
   width: 70%;
 }
 
-#CV4 h1 {
+#cv4 h1 {
   margin-top: 50px;
   text-align: center;
   text-decoration: underline;

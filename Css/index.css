@@ -9,16 +9,16 @@ header {
   margin-left: 20px;
 }
 
-header i{
-  margin: 4px;
-  padding: 4px;
+header i {
+  margin: 8px;
+  padding: 2px;
 }
 
-#menuicon {
+#menu-icon {
   color: black;
 }
 
-#youtubeicon {
+#youtube-icon {
   color: red;
   padding: 15px;
 }
@@ -29,19 +29,27 @@ header input {
   width: 460px;
   border-radius: 15px;
   border: 1px solid red;
+  transition: 0.7s;
 }
 
 header button {
   border-radius: 15px;
   border: 1px solid red;
+  transition: 0.5s;
 }
 
-#Signin {
+header button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: red;
+}
+
+#sign-in {
   text-decoration: none;
   font-weight: bold;
 }
 
-#User {
+#user {
   color: rgb(255, 0, 0);
   margin: 4px;
   padding: 4px;
@@ -54,33 +62,45 @@ header ul {
 header ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+  transition: 0.8s;
 }
 
-#Adds {
+header ul li a:hover {
+  background-color: blue;
+  border-radius: 5px;
+}
+
+#adds {
   margin-left: 20px;
 }
 
-#VideoTitle {
-  font-size: 50px;
+.video-title {
+  font-size: 45px;
+  display: inline-block;
+  width: 50%;
 }
 
-.Subscribe {
+.subscribe {
   padding: 15px;
   margin: 20px;
   border-color: red;
-  border-radius: 15px;
 }
 
-#AboutVideo i{
+.subscribe:hover {
+  background-color: red;
+  color: #fff;
+}
+
+#about-video i {
   padding: 15px;
 }
 
-#AboutVideo button {
+#about-video button {
   border-radius: 15px;
   margin-left: 5px;
 }
 
-#AboutVideo span{
+#about-video span {
   font-weight: bold;
   font-size: 20px;
 }
@@ -115,7 +135,7 @@ header ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.Sortby {
+.sort-by {
   border: 1px solid red;
   border-radius: 15px;
   margin-top: 5px;
@@ -138,8 +158,9 @@ header ul li a {
 }
 
 #comments img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
 }
 
 #comments button {
@@ -147,8 +168,17 @@ header ul li a {
   border-radius: 15px;
 }
 
+#comments hr {
+  background-color: #fff;
+  border: 5px solid #fff;
+}
+
 #comments i {
   font-size: 18px;
+}
+
+.time {
+  font-size: 1px;
 }
 
 .right-content2 {
@@ -178,10 +208,15 @@ header ul li a {
 #about a {
   font-weight: bold;
   font-size: 30px;
-  color: #fff;
+  color: #343434;
   border-radius: 10px;
   text-decoration: none;
+  transition: 0.6s;
+}
+
+#about a:hover {
   background-color: rgb(47, 183, 47);
+  color: #fff;
 }
 
 #about i {
@@ -193,7 +228,7 @@ header ul li a {
   color: #fff;
 }
 
-#scrollTop {
+#scroll-top {
   cursor: pointer;
   background-color: lightblue;
   padding: 6px;

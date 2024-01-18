@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube</title>
-    <link rel="stylesheet" href="CSS/login.css" />
+    <link rel="stylesheet" href="/CSS/login.css" />
     <link
       rel="icon"
       href="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png"
@@ -16,45 +16,40 @@
   </head>
 
   <body>
-    <div id="Login">
-      <span> Login Page</span>
-      <div
-        class="create"
-      >
+    <div id="login">
+      <span>  .</span>
+      <div class="create">
         <h1><i class="fa-regular fa-user"></i> LOGIN PAGE</h1>
         <form autocomplete="on">
           <label for="fname"> First Name</label><br />
-          <input type="text" id="fname" name="username" autofocus /> <br />
+          <input type="text" id="fname" name="username" autofocus required />
+          <br />
           <label for="lname">Last name</label><br />
-          <input type="text" id="lname" name="lname" /><br />
+          <input type="text" id="lname" name="lname" required /><br />
           <label for="pwd">Password</label><br />
-          <input type="password" id="pwd" name="pwd" /><br />
+          <input type="password" id="pwd" name="pwd" required /><br />
           <label>Date of birth</label><br />
           <input type="date" min="2005-01-01" /><br /><br />
-          <label for="gender"> Gender :</label> <br>
+          <label for="gender"> Gender :</label> <br />
           <input type="radio" id="female" name="gender" value="FEMALE" />
           <label for="female">Female</label>
           <input type="radio" id="male" name="gender" value="MALE" />
           <label for="male">Male</label>
-          <input
-            type="radio"
-            id="custom"
-            name="gender"
-            value="CUSTOM"
-          />
-          <label for="custom">Custom</label><br>
+          <input type="radio" id="custom" name="gender" value="CUSTOM" />
+          <label for="custom">Custom</label><br />
+          <hr>
+          <label for="describe">Describe yourself</label><br>
+          <textarea name="describe" id="" cols="20" rows="10" resize:none></textarea> <br>
           <input class="reset" type="reset" value="RESET" /> <br />
           <input
             class="submit"
-            type="button"
-            onclick="alert('You have successfully registered!')"
+            type="submit"
             value="SUBMIT"
           />
         </form>
+        <hr>
         <div>
-          <a
-            class="backto"
-            href="./index.html"
+          <a class="backto" href="./index.html"
             ><i class="fa-solid fa-arrow-left"></i> Back to previous page</a
           >
         </div>
