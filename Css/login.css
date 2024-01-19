@@ -1,28 +1,28 @@
 #login {
   background-image: url(https://www.sagatraining.ca/wp-content/uploads/2018/10/background-images-for-login-form-8.jpg);
   width: 100%;
-  height: 900px;
+  height: 1200px;
   background-position: center;
 }
 
 #login h1 {
   padding-top: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(42, 95, 165);
+  color: cadetblue;
 }
 
-#login span{
-    text-align: center;
+#login span {
+  text-align: center;
 }
 
 .create {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
   opacity: 83%;
   background-color: rgb(201, 230, 255);
-  width: 30%;
-  margin-left: 420px;
-  height: 750px;
+  width: 40%;
+  margin-left: 380px;
+  height: 1050px;
   border-radius: 40px;
 }
 
@@ -34,7 +34,7 @@
 
 .reset {
   padding: 15px;
-  width: 130px;
+  width: 170px;
   border-radius: 20px;
   border: 1px solid rgb(255, 0, 0);
   color: rgb(75, 75, 75);
@@ -42,14 +42,14 @@
   cursor: pointer;
 }
 
-.reset:hover{
-    background-color: red;
-    color: white;
+.reset:hover {
+  background-color: red;
+  color: white;
 }
 
 .submit {
   padding: 15px;
-  width: 130px;
+  width: 170px;
   border-radius: 20px;
   border: 1px solid rgb(0, 255, 0);
   color: rgb(75, 75, 75);
@@ -57,13 +57,13 @@
   cursor: pointer;
 }
 
-.submit:hover{
-    background-color: rgb(0, 255, 0);
-    color: white;
+.submit:hover {
+  background-color: rgb(0, 255, 0);
+  color: white;
 }
 
 form label {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .backto {
@@ -74,12 +74,44 @@ form label {
   display: inline-block;
 }
 
-.backto:hover{
-    color: brown;
+.backto:hover {
+  color: brown;
 }
 
-textarea{
+textarea {
   resize: vertical;
   height: 170px;
   width: 300px;
+}
+
+summary {
+  background-color: cadetblue;
+  padding: 10px;
+  cursor: pointer;
+}
+
+summary:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+details p {
+  background-color: white;
+}
+
+legend {
+  text-align: start;
+  background-color: cadetblue;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 23px;
+  color: white;
+}
+
+fieldset {
+  border: 5px solid cadetblue;
+}
+
+.site-progress {
+  font-size: 22px;
 }

@@ -17,37 +17,64 @@
 
   <body>
     <div id="login">
-      <span>  .</span>
+      <span> .</span>
       <div class="create">
         <h1><i class="fa-regular fa-user"></i> LOGIN PAGE</h1>
         <form autocomplete="on">
-          <label for="fname"> First Name</label><br />
-          <input type="text" id="fname" name="username" autofocus required />
+          <fieldset>
+            <legend>About yourself</legend>
+            <label for="fname"> First Name</label><br />
+            <input type="text" id="fname" name="username" autofocus required />
+            <br />
+            <label for="lname">Last name</label><br />
+            <input type="text" id="lname" name="lname" required /><br />
+            <label for="pwd">Password</label><br />
+            <input type="password" id="pwd" name="pwd" required /><br />
+            <label>Date of birth</label><br />
+            <input type="date" min="2005-01-01" /><br /><br />
+            <label for="gender"> Gender :</label> <br />
+            <input type="radio" id="female" name="gender" value="FEMALE" />
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="MALE" />
+            <label for="male">Male</label>
+            <input type="radio" id="custom" name="gender" value="CUSTOM" />
+            <label for="custom">Custom</label><br />
+          </fieldset>
+          <label for="languages">Choose language</label><br />
+          <select name="languages" id="languages">
+            <option value="languages">AZ</option>
+            <option value="languages">ENG</option>
+            <option value="languages">RU</option>
+            <option value="languages">UA</option>
+          </select>
           <br />
-          <label for="lname">Last name</label><br />
-          <input type="text" id="lname" name="lname" required /><br />
-          <label for="pwd">Password</label><br />
-          <input type="password" id="pwd" name="pwd" required /><br />
-          <label>Date of birth</label><br />
-          <input type="date" min="2005-01-01" /><br /><br />
-          <label for="gender"> Gender :</label> <br />
-          <input type="radio" id="female" name="gender" value="FEMALE" />
-          <label for="female">Female</label>
-          <input type="radio" id="male" name="gender" value="MALE" />
-          <label for="male">Male</label>
-          <input type="radio" id="custom" name="gender" value="CUSTOM" />
-          <label for="custom">Custom</label><br />
-          <hr>
-          <label for="describe">Describe yourself</label><br>
-          <textarea name="describe" id="" cols="20" rows="10" resize:none></textarea> <br>
+          <label for="describe">Describe yourself</label><br />
+          <textarea
+            name="describe"
+            id=""
+            cols="20"
+            rows="10"
+            resize:none
+          ></textarea>
+          <br />
           <input class="reset" type="reset" value="RESET" /> <br />
-          <input
-            class="submit"
-            type="submit"
-            value="SUBMIT"
-          />
+          <input class="submit" type="submit" value="SUBMIT" />
         </form>
-        <hr>
+        <hr />
+        <details>
+          <summary>About Us</summary>
+          <p>
+            <q
+              >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Expedita perspiciatis corrupti mollitia aperiam quod, ipsam odit
+              amet consequuntur voluptatum voluptas optio perferendis similique
+              excepturi eveniet praesentium ipsa dicta sequi. Fugit.</q
+            >
+          </p>
+        </details>
+        <hr />
+        <label class="site-progress" for="site">Site Progress %</label><br />
+        <progress id="site" value="40" max="100"></progress>
         <div>
           <a class="backto" href="./index.html"
             ><i class="fa-solid fa-arrow-left"></i> Back to previous page</a
