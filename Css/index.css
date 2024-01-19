@@ -6,7 +6,9 @@ header {
   padding: 30px;
   margin-bottom: 30px;
   font-size: 25px;
-  margin-left: 20px;
+  position: sticky;
+  background-color: #72019bf3;
+  top: 0;
 }
 
 header i {
@@ -55,17 +57,23 @@ header button:hover {
   padding: 4px;
 }
 
-header ul {
+.after-head ul {
   background-color: rgb(255, 0, 0);
+  padding: 20px;
 }
 
-header ul li a {
+.after-head ul li{
+  margin-top: 15px;
+}
+
+.after-head ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   transition: 0.8s;
+  font-size: 30px;
 }
 
-header ul li a:hover {
+.after-head ul li a:hover {
   background-color: blue;
   border-radius: 5px;
 }
@@ -357,9 +365,22 @@ header ul li a:hover {
 
 #scroll-top {
   cursor: pointer;
-  background-color: lightblue;
-  padding: 6px;
-  margin-left: 71rem;
-  display: right;
-  border-radius: 15px;
+  background-color: rgba(173, 216, 230, 0.612);
+  padding: 10px 0;
+  position: sticky;
+  bottom: 10px;
+  right: 100px;
+  left: 78rem;
+  z-index: 99;
+  border: 1px solid black;
+}
+
+#scroll-top a{
+  color: black;
+  padding: 10px;
+}
+
+#scroll-top a:hover{
+  color: red;
+  background-color: black;
 }
