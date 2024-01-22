@@ -7,7 +7,7 @@ header {
   margin-bottom: 30px;
   font-size: 25px;
   position: sticky;
-  background-color: #72019bf3;
+  background-color: #000000f3;
   top: 0;
 }
 
@@ -16,8 +16,8 @@ header i {
   padding: 4px;
 }
 
-#menu-icon {
-  color: black;
+#menu-icon{
+  color: #fff;
 }
 
 #youtube-icon {
@@ -167,7 +167,7 @@ table th {
   font-size: 35px;
 }
 
-table tr:nth-child(even){
+table tr:nth-child(even) {
   background-color: brown;
   color: #fff;
 }
@@ -285,12 +285,12 @@ table td {
   border: 1px solid black;
 }
 
-#scroll-top a{
+#scroll-top a {
   color: black;
   padding: 10px;
 }
 
-#scroll-top a:hover{
+#scroll-top a:hover {
   color: red;
   background-color: black;
 }

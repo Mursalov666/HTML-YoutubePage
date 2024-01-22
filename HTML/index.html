@@ -18,7 +18,7 @@
   <body>
     <div class="container">
       <header>
-        <i id="menui-con" class="fa-solid fa-bars"></i>
+        <i id="menu-icon" class="fa-solid fa-bars"></i>
 
         <i id="youtube-icon" class="fa-brands fa-youtube">YouTube</i>
 
@@ -67,7 +67,7 @@
 
       <main>
         <iframe
-          width="800"
+          width="817"
           height="467"
           src="https://www.youtube-nocookie.com/embed/ZSozwZvpaNs?si=B4TuEuHm2SpHErn_"
           title="YouTube video player"
@@ -84,24 +84,36 @@
         />
 
         <div id="about-video">
-          <em><h1 class="video-title">Sezen Aksu - Son Bakış | Lyrics</h1></em>
+          <h1 class="video-title">Sezen Aksu - Son Bakış | Lyrics</h1>
           <br />
 
-          <i class="fa-regular fa-user"> JANAGA</i>
-          <button class="subscribe">SUBSCRIBE</button>
-          <button>
-            <i class="fa-solid fa-thumbs-up"> 60 K</i> |
-            <i class="fa-solid fa-thumbs-down"></i>
-          </button>
-          <button>
-            <i class="fa-solid fa-share"> Share</i>
-          </button>
-          <button>
-            <i class="fa-solid fa-ellipsis"></i>
-          </button>
-          <br />
-          <span>Subscribes 710K</span>
-          <br />
+          <div class="video-elements">
+            <div class="video-elements2">
+              <img
+                src="https://yt3.ggpht.com/pu0jCHJcVpnkwJ3FyKhlirrh29K_iVrHmVhvEbgbmyKmFiKSBTQDksb7yO_cRVSsIx7wI0q3KD8=s88-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+              <span
+                >JANAGA <br />
+                710K subscribers
+              </span>
+            </div>
+            <div>
+              <button class="subscribe">SUBSCRIBE</button>
+              <button class="btn-video">
+                <i class="fa-solid fa-thumbs-down"></i>
+              </button>
+              <button class="btn-video">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </button>
+              <button class="btn-video">
+                <i class="fa-solid fa-share"> SHARE</i>
+              </button>
+              <button class="btn-video">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </div>
         </div>
 
         <div id="description">
@@ -360,19 +372,29 @@
         </div>
 
         <div class="left-content">
-          <span><b>2,150 Comments</b></span>
-          <button class="sort-by">
-            <i class="fa-solid fa-arrow-up-wide-short"> Sort by</i>
-          </button>
+          <div class="comment-sort">
+            <span><b>2,150 Comments</b></span>
+            <button class="sort-by">
+              <i class="fa-solid fa-arrow-up-wide-short"> Sort by</i>
+            </button>
+          </div>
           <br />
-          <input type="text" placeholder="    Add comment..." />
+          <div class="add-comment">
+            <img
+              src="https://yt3.ggpht.com/GTdSkKU0Q1gipTyVk8P2ot1Dhd4t9uTSbzGonbwin3IKQ3a0lwdNtf5wVABf9X5gm7MsGss=s88-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <input type="text" placeholder="    Add comment..." />
+          </div>
           <div id="comments">
-            <div>
-              <img
-                src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
-                alt="user"
-              />
-              <span>User 2month ago</span>
+            <div class="user-comment">
+              <div class="user-elements">
+                <img
+                  src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+                  alt="user"
+                />
+                <span>User 2month ago</span>
+              </div>
               <h5>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
                 accusamus recusandae esse ex ea dicta saepe ducimus commodi? Ea
@@ -380,21 +402,25 @@
                 omnis consequatur numquam voluptatibus error expedita deleniti,
                 vel perferendis aperiam voluptates illum nisi.
               </h5>
-              <button>
-                <i class="fa-solid fa-thumbs-up"></i> |
+              <button class="btn1">
                 <i class="fa-solid fa-thumbs-down"></i>
               </button>
-              <button>
+              <button class="btn2">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </button>
+              <button class="reply-btn">
                 <i class="fa-solid fa-reply"> Reply</i>
               </button>
             </div>
             <hr />
             <div class="user-comment">
-              <img
-                src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
-                alt="user"
-              />
-              <span>User 2month ago</span>
+              <div class="user-elements">
+                <img
+                  src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+                  alt="user"
+                />
+                <span>User 2month ago</span>
+              </div>
               <h5>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
                 accusamus recusandae esse ex ea dicta saepe ducimus commodi? Ea
@@ -402,21 +428,25 @@
                 omnis consequatur numquam voluptatibus error expedita deleniti,
                 vel perferendis aperiam voluptates illum nisi.
               </h5>
-              <button>
-                <i class="fa-solid fa-thumbs-up"></i> |
+              <button class="btn1">
                 <i class="fa-solid fa-thumbs-down"></i>
               </button>
-              <button>
+              <button class="btn2">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </button>
+              <button class="reply-btn">
                 <i class="fa-solid fa-reply"> Reply</i>
               </button>
             </div>
             <hr />
             <div class="user-comment">
-              <img
-                src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
-                alt="user"
-              />
-              <span>User 2month ago</span>
+              <div class="user-elements">
+                <img
+                  src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+                  alt="user"
+                />
+                <span>User 2month ago</span>
+              </div>
               <h5>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
                 accusamus recusandae esse ex ea dicta saepe ducimus commodi? Ea
@@ -424,21 +454,25 @@
                 omnis consequatur numquam voluptatibus error expedita deleniti,
                 vel perferendis aperiam voluptates illum nisi.
               </h5>
-              <button>
-                <i class="fa-solid fa-thumbs-up"></i> |
+              <button class="btn1">
                 <i class="fa-solid fa-thumbs-down"></i>
               </button>
-              <button>
+              <button class="btn2">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </button>
+              <button class="reply-btn">
                 <i class="fa-solid fa-reply"> Reply</i>
               </button>
             </div>
             <hr />
             <div class="user-comment">
-              <img
-                src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
-                alt="user"
-              />
-              <span>User 2month ago</span>
+              <div class="user-elements">
+                <img
+                  src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+                  alt="user"
+                />
+                <span>User 2month ago</span>
+              </div>
               <h5>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
                 accusamus recusandae esse ex ea dicta saepe ducimus commodi? Ea
@@ -446,21 +480,25 @@
                 omnis consequatur numquam voluptatibus error expedita deleniti,
                 vel perferendis aperiam voluptates illum nisi.
               </h5>
-              <button>
-                <i class="fa-solid fa-thumbs-up"></i> |
+              <button class="btn1">
                 <i class="fa-solid fa-thumbs-down"></i>
               </button>
-              <button>
+              <button class="btn2">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </button>
+              <button class="reply-btn">
                 <i class="fa-solid fa-reply"> Reply</i>
               </button>
             </div>
             <hr />
             <div class="user-comment">
-              <img
-                src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
-                alt="user"
-              />
-              <span>User 2month ago</span>
+              <div class="user-elements">
+                <img
+                  src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+                  alt="user"
+                />
+                <span>User 2month ago</span>
+              </div>
               <h5>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
                 accusamus recusandae esse ex ea dicta saepe ducimus commodi? Ea
@@ -468,21 +506,25 @@
                 omnis consequatur numquam voluptatibus error expedita deleniti,
                 vel perferendis aperiam voluptates illum nisi.
               </h5>
-              <button>
-                <i class="fa-solid fa-thumbs-up"></i> |
+              <button class="btn1">
                 <i class="fa-solid fa-thumbs-down"></i>
               </button>
-              <button>
+              <button class="btn2">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </button>
+              <button class="reply-btn">
                 <i class="fa-solid fa-reply"> Reply</i>
               </button>
             </div>
             <hr />
             <div class="user-comment">
-              <img
-                src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
-                alt="user"
-              />
-              <span>User 2month ago</span>
+              <div class="user-elements">
+                <img
+                  src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+                  alt="user"
+                />
+                <span>User 2month ago</span>
+              </div>
               <h5>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
                 accusamus recusandae esse ex ea dicta saepe ducimus commodi? Ea
@@ -490,21 +532,25 @@
                 omnis consequatur numquam voluptatibus error expedita deleniti,
                 vel perferendis aperiam voluptates illum nisi.
               </h5>
-              <button>
-                <i class="fa-solid fa-thumbs-up"></i> |
+              <button class="btn1">
                 <i class="fa-solid fa-thumbs-down"></i>
               </button>
-              <button>
+              <button class="btn2">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </button>
+              <button class="reply-btn">
                 <i class="fa-solid fa-reply"> Reply</i>
               </button>
             </div>
             <hr />
             <div class="user-comment">
-              <img
-                src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
-                alt="user"
-              />
-              <span>User 2month ago</span>
+              <div class="user-elements">
+                <img
+                  src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+                  alt="user"
+                />
+                <span>User 2month ago</span>
+              </div>
               <h5>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
                 accusamus recusandae esse ex ea dicta saepe ducimus commodi? Ea
@@ -512,21 +558,25 @@
                 omnis consequatur numquam voluptatibus error expedita deleniti,
                 vel perferendis aperiam voluptates illum nisi.
               </h5>
-              <button>
-                <i class="fa-solid fa-thumbs-up"></i> |
+              <button class="btn1">
                 <i class="fa-solid fa-thumbs-down"></i>
               </button>
-              <button>
+              <button class="btn2">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </button>
+              <button class="reply-btn">
                 <i class="fa-solid fa-reply"> Reply</i>
               </button>
             </div>
             <hr />
             <div class="user-comment">
-              <img
-                src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
-                alt="user"
-              />
-              <span>User 2month ago</span>
+              <div class="user-elements">
+                <img
+                  src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+                  alt="user"
+                />
+                <span>User 2month ago</span>
+              </div>
               <h5>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
                 accusamus recusandae esse ex ea dicta saepe ducimus commodi? Ea
@@ -534,21 +584,25 @@
                 omnis consequatur numquam voluptatibus error expedita deleniti,
                 vel perferendis aperiam voluptates illum nisi.
               </h5>
-              <button>
-                <i class="fa-solid fa-thumbs-up"></i> |
+              <button class="btn1">
                 <i class="fa-solid fa-thumbs-down"></i>
               </button>
-              <button>
+              <button class="btn2">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </button>
+              <button class="reply-btn">
                 <i class="fa-solid fa-reply"> Reply</i>
               </button>
             </div>
             <hr />
             <div class="user-comment">
-              <img
-                src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
-                alt="user"
-              />
-              <span>User 2month ago</span>
+              <div class="user-elements">
+                <img
+                  src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+                  alt="user"
+                />
+                <span>User 2month ago</span>
+              </div>
               <h5>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
                 accusamus recusandae esse ex ea dicta saepe ducimus commodi? Ea
@@ -556,11 +610,13 @@
                 omnis consequatur numquam voluptatibus error expedita deleniti,
                 vel perferendis aperiam voluptates illum nisi.
               </h5>
-              <button>
-                <i class="fa-solid fa-thumbs-up"></i> |
+              <button class="btn1">
                 <i class="fa-solid fa-thumbs-down"></i>
               </button>
-              <button>
+              <button class="btn2">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </button>
+              <button class="reply-btn">
                 <i class="fa-solid fa-reply"> Reply</i>
               </button>
             </div>
