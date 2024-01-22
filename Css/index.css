@@ -3,12 +3,15 @@
 }
 
 header {
-  padding: 30px;
   margin-bottom: 30px;
   font-size: 25px;
+  height: 63px;
   position: sticky;
   background-color: #000000f3;
   top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header i {
@@ -16,7 +19,7 @@ header i {
   padding: 2px;
 }
 
-#menu-icon{
+#menu-icon {
   color: #fff;
 }
 
@@ -38,6 +41,7 @@ header button {
   border-radius: 15px;
   border: 1px solid red;
   transition: 0.5s;
+  margin-right: 10px;
 }
 
 header button:hover {
@@ -49,6 +53,7 @@ header button:hover {
 #sign-in {
   text-decoration: none;
   font-weight: bold;
+  color: #ff0000;
 }
 
 #user {
@@ -173,6 +178,25 @@ p {
   margin-left: 20px;
 }
 
+.suggest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgray;
+}
+
+.suggest a {
+  text-decoration: none;
+  color: blue;
+  margin-right: 10px;
+}
+
+.suggest h3 {
+  margin-left: 20px;
+  font-family: monospace;
+  font-weight: 100;
+}
+
 .music-btn {
   width: 88%;
   margin-left: 50px;
@@ -203,7 +227,6 @@ p {
 }
 
 .show-btn:hover {
-  border: none;
   background-color: rgb(0, 0, 147);
 }
 
@@ -308,6 +331,14 @@ p {
   padding: 5px 10px;
 }
 
+.replies {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  color: blue;
+  margin-top: 15px;
+}
+
 .reply-btn:hover {
   background-color: #343434;
   color: white;
@@ -349,25 +380,25 @@ p {
   padding: 9px 10px;
 }
 
-.sort-by:hover{
+.sort-by:hover {
   background-color: #858585;
   color: #fff;
 }
 
-.comment-sort{
+.comment-sort {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
 }
 
-.add-comment{
+.add-comment {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.add-comment img{
+.add-comment img {
   border-radius: 100%;
 }
 
@@ -392,14 +423,16 @@ p {
   margin-top: 10px;
 }
 
-.user-elements{
+.user-elements {
   display: flex;
   align-items: center;
 }
 
-#comments span{
+#comments span {
   margin-left: 20px;
   font-weight: bold;
+  font-size: 23px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #comments button {
@@ -467,10 +500,9 @@ p {
   cursor: pointer;
   background-color: rgba(173, 216, 230, 0.612);
   padding: 10px 0;
-  position: sticky;
+  position: fixed;
   bottom: 10px;
-  right: 100px;
-  left: 78rem;
+  right: 10px;
   z-index: 99;
   border: 1px solid black;
 }
