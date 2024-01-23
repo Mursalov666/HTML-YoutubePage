@@ -50,6 +50,71 @@ header button:hover {
   color: red;
 }
 
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  background-color: #fff;
+  height: 450px;
+  overflow: auto;
+  overflow-x: hidden;
+  top: 0;
+  width: 330px;
+  display: none;
+  right: 50px;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.dropdown-content::-webkit-scrollbar{
+  width: 0;
+}
+
+body::-webkit-scrollbar{
+  width: 0;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.account-elements{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.account-elements p{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.account-elements img{
+  border-radius: 50px;
+  width: 90px;
+}
+
+.lft-rgt-elements{
+  display: flex;
+  align-items: center;
+}
+
+.lft-rgt-elements i{
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.right-text{
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 #sign-in {
   text-decoration: none;
   font-weight: bold;
