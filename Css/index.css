@@ -37,6 +37,10 @@ header input {
   transition: 0.7s;
 }
 
+input:focus{
+  background-color: #ff0000;
+}
+
 header button {
   border-radius: 15px;
   border: 1px solid red;
@@ -107,6 +111,11 @@ body::-webkit-scrollbar{
 .lft-rgt-elements i{
   margin-top: 10px;
   font-size: 20px;
+}
+
+.right-text p:hover{
+  background-color: #e7e7e7;
+  cursor: pointer;
 }
 
 .right-text{
