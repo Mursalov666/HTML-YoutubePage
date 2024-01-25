@@ -4,7 +4,7 @@
 
 header {
   margin-bottom: 30px;
-  font-size: 25px;
+  font-size: 20px;
   height: 63px;
   position: sticky;
   background-color: #000000f3;
@@ -12,11 +12,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 4px 11px 20px 1px;
 }
 
 header i {
-  margin: 4px;
-  padding: 4px;
+  margin: 8px;
+  padding: 2px;
 }
 
 #menu-icon {
@@ -29,18 +30,19 @@ header i {
 }
 
 header input {
-  padding: 8px;
-  margin: 30px;
+  padding: 10px;
+  margin: -6px;
   width: 460px;
-  border-radius: 15px;
+  border-radius: 20px 0 0 20px;
   border: 1px solid red;
+  transition: 0.7s;
 }
 
-header .right{
-  display: flex;
+input:focus {
+  background-color: #c7c7c7;
 }
 
-header button {
+.right button {
   border-radius: 15px;
   border: 1px solid red;
   transition: 0.5s;
@@ -51,6 +53,60 @@ header button:hover {
   cursor: pointer;
   background-color: black;
   color: red;
+}
+
+.btn-search {
+  border: 1px solid red;
+  border-radius: 0 20px 20px 0;
+  position: relative;
+}
+
+.btn-search:hover::after {
+  content: "Search";
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #777;
+  color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.btn-microphone {
+  position: relative;
+}
+
+.btn-microphone:hover::after {
+  content: "Search with your voice";
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #777;
+  color: #fff;
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.btn-folder {
+  position: relative;
+}
+
+.btn-folder:hover::after {
+  content: "Create";
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #777;
+  color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .dropdown{
@@ -73,10 +129,6 @@ header button:hover {
 }
 
 .dropdown-content::-webkit-scrollbar{
-  width: 0;
-}
-
-body::-webkit-scrollbar{
   width: 0;
 }
 
@@ -138,22 +190,23 @@ body::-webkit-scrollbar{
   background-color: rgb(255, 0, 0);
   padding: 20px;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .back-to:hover {
   background-color: rgb(0, 153, 255);
-  color: rgb(189, 226, 43);
+  color: rgb(0, 0, 0);
 }
 
 #developers h3 {
-  background-color: rgb(226, 43, 58);
+  background-color: rgb(255, 0, 21);
   color: #fff;
   font-size: 40px;
   text-align: center;
 }
 
 #developers ul {
-  background-color: rgb(113, 43, 226);
+  background-color: rgb(255, 0, 0);
   padding: 105px;
 }
 
@@ -176,7 +229,7 @@ body::-webkit-scrollbar{
 
 #backgr-image {
   background-image: url(https://rottenswamp.ru/images/111111-2_6c7ec.jpg);
-  vertical-align: bottom;
+  background-position: center;
   width: 100%;
   height: 1000px;
 }
@@ -192,13 +245,22 @@ body::-webkit-scrollbar{
 #cv1 {
   border: 4px solid black;
   margin-top: 30px;
-  background-color: blanchedalmond;
+  background-color: rgb(154, 154, 154);
 }
 
 .cv-title {
   font-size: 45px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-left: 180px;
+}
+
+.cv1-title{
+  display: flex;
+}
+
+.cv1-title img{
+  width: 250px;
+  height: auto;
 }
 
 #cv1 hr {
@@ -213,14 +275,27 @@ body::-webkit-scrollbar{
   text-decoration: underline;
 }
 
-.personal ul li {
-  font-size: 25px;
-  text-align: center;
-  font-weight: bold;
+.personal{
+  margin: auto;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
 }
 
-.personal ul li span {
-  font-weight: 100;
+.leftcont{
+  font-size: 20px;
+}
+
+.rightcont{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.achievements{
+  margin: auto;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
 }
 
 .about-table {
@@ -260,77 +335,18 @@ table td {
   margin-left: 50px;
 }
 
-.achievements ul li {
-  font-size: 25px;
-  text-align: center;
-  font-weight: bold;
+.abilities {
+  margin: auto;
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
 }
 
-.abilities ul li {
-  font-size: 25px;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.participation ul li {
-  font-size: 25px;
-  text-align: center;
-  font-weight: bold;
-}
-
-#cv2 {
-  border: 4px solid black;
-  margin-top: 30px;
-  background-color: blanchedalmond;
-}
-
-#cv2 hr {
-  height: 5px;
-  background-color: black;
-  width: 70%;
-}
-
-#cv2 h1 {
-  margin-top: 50px;
-  text-align: center;
-  text-decoration: underline;
-}
-
-#cv3 {
-  border: 4px solid black;
-  margin-top: 30px;
-  background-color: blanchedalmond;
-}
-
-#cv3 hr {
-  height: 5px;
-  background-color: black;
-  width: 70%;
-}
-
-#cv3 h1 {
-  margin-top: 50px;
-  text-align: center;
-  text-decoration: underline;
-}
-
-#cv4 {
-  border: 4px solid black;
-  margin-top: 30px;
-  background-color: blanchedalmond;
-}
-
-#cv4 hr {
-  height: 5px;
-  background-color: black;
-  width: 70%;
-}
-
-#cv4 h1 {
-  margin-top: 50px;
-  text-align: center;
-  text-decoration: underline;
+.participation {
+  margin: auto;
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
 }
 
 #about {
@@ -368,4 +384,17 @@ table td {
 #scroll-top a:hover {
   color: red;
   background-color: black;
+}
+
+.develop-list{
+  background-color: #ffae00;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+summary{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
 }

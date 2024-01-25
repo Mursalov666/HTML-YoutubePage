@@ -3,8 +3,7 @@
 }
 
 header {
-  margin-bottom: 30px;
-  font-size: 25px;
+  font-size: 20px;
   height: 63px;
   position: sticky;
   background-color: #000000f3;
@@ -12,6 +11,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 4px 11px 20px 1px;
 }
 
 header i {
@@ -29,10 +29,10 @@ header i {
 }
 
 header input {
-  padding: 8px;
-  margin: 30px;
+  padding: 10px;
+  margin: -6px;
   width: 460px;
-  border-radius: 15px;
+  border-radius: 20px 0 0 20px;
   border: 1px solid red;
   transition: 0.7s;
 }
@@ -41,7 +41,7 @@ input:focus {
   background-color: #c7c7c7;
 }
 
-header button {
+.right button {
   border-radius: 15px;
   border: 1px solid red;
   transition: 0.5s;
@@ -52,6 +52,60 @@ header button:hover {
   cursor: pointer;
   background-color: black;
   color: red;
+}
+
+.btn-search {
+  border: 1px solid red;
+  border-radius: 0 20px 20px 0;
+  position: relative;
+}
+
+.btn-search:hover::after {
+  content: "Search";
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #777;
+  color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.btn-microphone {
+  position: relative;
+}
+
+.btn-microphone:hover::after {
+  content: "Search with your voice";
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #777;
+  color: #fff;
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.btn-folder {
+  position: relative;
+}
+
+.btn-folder:hover::after {
+  content: "Create";
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #777;
+  color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .dropdown {
@@ -67,7 +121,7 @@ header button:hover {
   top: 0;
   width: 330px;
   display: none;
-  right: 50px;
+  right: 54px;
   position: absolute;
   border-radius: 10px;
   border: 1px solid black;
@@ -102,12 +156,6 @@ header button:hover {
 .lft-rgt-elements {
   display: flex;
   align-items: center;
-}
-
-.right-inside-element{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
 }
 
 .lft-rgt-elements i {
@@ -235,11 +283,11 @@ header button:hover {
   width: 100%;
 }
 
-#description h4{
+#description h4 {
   margin-left: 20px;
 }
 
-#description p{
+#description p {
   margin-left: 20px;
 }
 
@@ -256,11 +304,11 @@ header button:hover {
   margin-left: 10px;
 }
 
-.description-continue h1{
+.description-continue h1 {
   margin-left: 20px;
 }
 
-.description-continue p{
+.description-continue p {
   margin-left: 20px;
 }
 
@@ -455,6 +503,13 @@ header button:hover {
   justify-content: space-between;
 }
 
+.right-inside-element {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 13px;
+  box-shadow: -2px 7px 12px 0px;
+}
+
 .sort-by {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 15px;
@@ -495,6 +550,11 @@ header button:hover {
   background-color: rgb(201, 201, 201);
 }
 
+.user-comment h5 {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
 #comments img {
   width: 50px;
   height: 50px;
@@ -529,16 +589,14 @@ header button:hover {
   font-size: 18px;
 }
 
-.music-description {
-  display: inline-block;
-}
-
 .music-description span {
   font-size: 18px;
+  font-weight: bold;
 }
 
 .music-description p {
   font-size: 12px;
+  font-weight: bold;
 }
 
 #about {
@@ -568,6 +626,10 @@ header button:hover {
 #about span {
   margin-left: 290px;
   color: #fff;
+}
+
+footer{
+  margin-top: 15px;
 }
 
 #scroll-top {
