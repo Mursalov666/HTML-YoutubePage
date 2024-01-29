@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   width: 0;
 }
 
@@ -120,4 +120,11 @@ fieldset {
 
 .site-progress {
   font-size: 22px;
+}
+
+@media (max-width:576px){
+  .create{
+    transform: translate(32%);
+    width: 60%;
+  }
 }

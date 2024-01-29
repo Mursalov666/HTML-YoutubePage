@@ -35,7 +35,6 @@ header input {
   width: 460px;
   border-radius: 20px 0 0 20px;
   border: 1px solid red;
-  transition: 0.7s;
 }
 
 input:focus {
@@ -109,12 +108,12 @@ header button:hover {
   display: inline-block;
 }
 
-.dropdown{
+.dropdown {
   position: relative;
   display: inline-block;
 }
 
-.dropdown-content{
+.dropdown-content {
   background-color: #fff;
   height: 450px;
   overflow: auto;
@@ -128,46 +127,46 @@ header button:hover {
   border: 1px solid black;
 }
 
-.dropdown-content::-webkit-scrollbar{
+.dropdown-content::-webkit-scrollbar {
   width: 0;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
-.account-elements{
+.account-elements {
   display: flex;
   align-items: center;
   margin-top: 20px;
   margin-left: 10px;
 }
 
-.account-elements p{
+.account-elements p {
   font-weight: bold;
   font-size: 20px;
   margin-left: 10px;
 }
 
-.account-elements img{
+.account-elements img {
   border-radius: 50px;
   width: 90px;
 }
 
-.lft-rgt-elements{
+.lft-rgt-elements {
   display: flex;
   align-items: center;
 }
 
-.lft-rgt-elements i{
+.lft-rgt-elements i {
   margin-top: 10px;
   font-size: 20px;
 }
 
-.right-text{
+.right-text {
   margin-left: 20px;
   font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #sign-in {
@@ -254,11 +253,11 @@ header button:hover {
   margin-left: 180px;
 }
 
-.cv1-title{
+.cv1-title {
   display: flex;
 }
 
-.cv1-title img{
+.cv1-title img {
   width: 250px;
   height: auto;
 }
@@ -275,23 +274,23 @@ header button:hover {
   text-decoration: underline;
 }
 
-.personal{
+.personal {
   margin: auto;
   display: flex;
   width: 50%;
   justify-content: space-between;
 }
 
-.leftcont{
+.leftcont {
   font-size: 20px;
 }
 
-.rightcont{
+.rightcont {
   font-size: 20px;
   font-weight: 900;
 }
 
-.achievements{
+.achievements {
   margin: auto;
   display: flex;
   width: 50%;
@@ -299,14 +298,13 @@ header button:hover {
 }
 
 .about-table {
-  margin-left: 130px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 table {
   border-collapse: collapse;
-  width: 90%;
+  margin: auto;
   height: 300px;
 }
 
@@ -386,27 +384,27 @@ table td {
   background-color: black;
 }
 
-.develop-list{
+.develop-list {
   background-color: #ffae00;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-summary{
+summary {
   margin-top: 20px;
   text-align: center;
   font-size: 25px;
   margin-bottom: 20px;
 }
 
-@media (min-width:576px) and (max-width:768px){
+@media (max-width:576px) {
   .container{
     padding: 0;
     margin: 0;
   }
 
-  header{
-    box-shadow: none;
+  header input{
+    display: none;
   }
 
   header i{
@@ -414,7 +412,54 @@ summary{
     padding: 2px;
   }
 
-  #youtube-icon{
+  header{
+    box-shadow: none;
+  }
+
+  #youtube-icon {
+    padding: 0;
+  }
+
+  .right button{
+    margin-right: 5px;
+  }
+
+  .btn-search{
+    border-radius: 15px;
+  }
+
+  .dropdown {
+    display: none;
+  }
+  
+  .cv1-title{
+    display: block;
+  }
+
+  .cv-title{
+    display: block;
+    margin-left: 0;
+    text-align: center;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    box-shadow: none;
+  }
+
+  header i {
+    margin: 4px;
+    padding: 2px;
+  }
+
+  #youtube-icon {
     padding: 0;
   }
 
@@ -434,7 +479,8 @@ summary{
     padding: 5px;
   }
 
-  .dropdown{
+  .dropdown {
     display: none;
   }
 }
+

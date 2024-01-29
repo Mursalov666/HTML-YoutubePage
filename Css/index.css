@@ -34,7 +34,6 @@ header input {
   width: 460px;
   border-radius: 20px 0 0 20px;
   border: 1px solid red;
-  transition: 0.7s;
 }
 
 input:focus {
@@ -222,6 +221,7 @@ header button:hover {
   border: 1px solid black;
   margin-right: 65px;
   background-color: #fff;
+  margin-left: 10px;
 }
 
 .subscribe:hover {
@@ -233,6 +233,20 @@ header button:hover {
   background-color: #343434;
   color: #fff;
   border: none;
+}
+
+.btn-video1{
+  background-color: #343434;
+  color: #fff;
+  border: none;
+}
+
+.btn-video1:hover {
+  background-color: #9b9b9b;
+}
+
+.btn-video2{
+  display: none;
 }
 
 .btn-video:hover {
@@ -509,7 +523,7 @@ header button:hover {
   margin-top: 13px;
 }
 
-.right-inside-element:hover{
+.right-inside-element:hover {
   box-shadow: -2px 7px 12px 0px;
   cursor: pointer;
 }
@@ -632,7 +646,7 @@ header button:hover {
   color: #fff;
 }
 
-footer{
+footer {
   margin-top: 15px;
 }
 
@@ -657,15 +671,14 @@ footer{
   background-color: black;
 }
 
-@media (min-width:576px) and (max-width:768px) {
-  
+@media (max-width:576px) {
   .container{
     padding: 0;
     margin: 0;
   }
 
-  header{
-    box-shadow: none;
+  header input{
+    display: none;
   }
 
   header i{
@@ -673,7 +686,168 @@ footer{
     padding: 2px;
   }
 
-  #youtube-icon{
+  header{
+    box-shadow: none;
+  }
+
+  #youtube-icon {
+    padding: 0;
+  }
+
+  .right button{
+    margin-right: 5px;
+  }
+
+  .btn-search{
+    border-radius: 15px;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .video-add img {
+    display: none;
+  }
+
+  .left-content{
+    width: 100%;
+  }
+  
+  .contents{
+    flex-wrap: wrap;
+  }
+
+  #about-video .video-title{
+    margin-left: 0;
+    font-size: 22px;
+  }
+
+  .video-elements{
+    flex-wrap: wrap;
+  }
+
+  .video-elements2{
+    width: 100%;
+  }
+
+  .video-elements3{
+    display: block;
+    margin-left: 10px;
+  }
+
+  .subscribe{
+    margin-left: 10px;
+  }
+
+  .video-elements2 img{
+    width: 11%;
+    margin-right: 10px;
+  }
+
+  .reply-btn{
+    display: none;
+  }
+
+  .description-continue{
+    display: none;
+  }
+
+  .video-elements3 button{
+    padding: 0;
+  }
+
+  .suggest h3{
+    width: 100%;
+  }
+
+  .btn-video1{
+    display: none;
+  }
+
+  .btn-video2{
+    display: inline-block;
+    background-color: #343434;
+    color: #fff;
+    border: none;
+  }
+
+  .video-elements3{
+    margin-left: 20px;
+  }
+
+  .comment-sort span{
+    font-size: 15px;
+  }
+
+  .comment-sort{
+    display: inline-block;
+  }
+
+  .sort-by{
+    margin-left: 20px;
+    background-color: #343434;
+    color: #fff;
+  }
+
+  .add-comment img{
+    width: 12%;
+  }
+
+  #comments span {
+    font-size: 15px;
+  }
+
+  .user-comment h5{
+    font-size: 13px;
+  }
+
+  .right-content {
+    width: 100%;
+    box-shadow: none;
+    margin-top: 0;
+  }
+
+  .right-inside-element:hover {
+    box-shadow: none;
+  }
+
+  .right-inside-element img {
+    height: auto;
+  }
+
+  .right-inside-element {
+    justify-content: start;
+  }
+
+  .music-description {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  .music-description p {
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    box-shadow: none;
+  }
+
+  header i {
+    margin: 4px;
+    padding: 2px;
+  }
+
+  #youtube-icon {
     padding: 0;
   }
 
@@ -693,81 +867,80 @@ footer{
     padding: 5px;
   }
 
-  .dropdown{
+  .dropdown {
     display: none;
   }
 
-  .video-add img{
+  .video-add img {
     display: none;
   }
 
-  .left-content{
+  .left-content {
     width: 100%;
   }
 
-  .video-elements2{
+  .video-elements2 {
     width: 50%;
   }
 
-  .video-elements2 p{
+  .video-elements2 p {
     width: 50%;
   }
 
-  .video-elements2 img{
+  .video-elements2 img {
     width: 30%;
   }
 
-  .video-elements3{
+  .video-elements3 {
     width: 100%;
   }
 
-  .description-continue{
+  .description-continue {
     display: none;
   }
 
-  .contents{
+  .contents {
     flex-wrap: wrap;
   }
 
-  .right-content{
+  .right-content {
     width: 100%;
     box-shadow: none;
   }
 
-  .right-inside-element:hover{
+  .right-inside-element:hover {
     box-shadow: none;
   }
 
-  .right-inside-element img{
+  .right-inside-element img {
     width: 25%;
     height: auto;
   }
 
-  .right-inside-element{
+  .right-inside-element {
     justify-content: start;
   }
 
-  .music-description{
+  .music-description {
     font-size: 30px;
     margin-left: 20px;
   }
 
-  .music-description p{
+  .music-description p {
     font-size: 15px;
     font-weight: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
-  .comment-sort span{
+  .comment-sort span {
     font-size: 15px;
   }
 
-  .user-comment h5{
+  .user-comment h5 {
     font-size: 15px;
   }
 
-  #comments span{
+  #comments span {
     font-size: 15px;
   }
-
 }
