@@ -282,6 +282,20 @@ header button:hover {
   padding: 15px;
 }
 
+.description-elements{
+  background-color: #9b9b9b;
+}
+
+.description-elements h4{
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.description-elements p{
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
 #about-video h1 {
   margin-left: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -290,6 +304,18 @@ header button:hover {
 
 #about-video button {
   border-radius: 40px;
+}
+
+.left-content1{
+  width: 69%;
+}
+
+.right-content1{
+  width: 28%;
+}
+.contents1{
+  display: flex;
+  justify-content: space-between;
 }
 
 #description {
@@ -715,7 +741,7 @@ footer {
   }
   
   .contents{
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
   }
 
   #about-video .video-title{
@@ -830,6 +856,22 @@ footer {
     font-weight: normal;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
+
+  .right-content1{
+    display: none;
+  }
+
+  .left-content1{
+    width: 100%;
+  }
+
+  #about-video{
+    width: 100%;
+  }
+
+  .video-elements{
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -840,6 +882,7 @@ footer {
 
   header {
     box-shadow: none;
+    font-size: 14px;
   }
 
   header i {
@@ -856,6 +899,14 @@ footer {
     margin-left: 26px;
     border-radius: 20px 0 0 20px;
     border: 1px solid red;
+  }
+
+  .left{
+    width: 25%;
+  }
+
+  .right{
+    width: 37%;
   }
 
   .right button {
@@ -879,6 +930,10 @@ footer {
     width: 100%;
   }
 
+  .video-elements{
+    flex-wrap: wrap;
+  }
+
   .video-elements2 {
     width: 50%;
   }
@@ -892,7 +947,7 @@ footer {
   }
 
   .video-elements3 {
-    width: 100%;
+    width: 50%;
   }
 
   .description-continue {
@@ -900,7 +955,7 @@ footer {
   }
 
   .contents {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
   }
 
   .right-content {
@@ -942,5 +997,80 @@ footer {
 
   #comments span {
     font-size: 15px;
+  }
+
+  .right-content1{
+    display: none;
+  }
+
+  .left-content1{
+    width: 100%;
+  }
+
+  .reply-btn{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .dropdown{
+    display: none;
+  }
+
+  .center input{
+    width: 135px;
+  }
+
+  .video-add img{
+    display: none;
+  }
+
+  .right-content1{
+    display: none;
+  }
+
+  .description-continue{
+    display: none;
+  }
+
+  .left-content1{
+    width: 100%;
+  }
+
+  .left-content{
+    width: 100%;
+  }
+
+  .right-content{
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .right-inside-element:hover {
+    box-shadow: none;
+  }
+
+  .right-inside-element img {
+    width: 25%;
+    height: auto;
+  }
+
+  .right-inside-element {
+    justify-content: start;
+  }
+
+  .music-description {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  .music-description p {
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .contents{
+    flex-wrap: wrap-reverse;
   }
 }

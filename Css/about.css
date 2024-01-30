@@ -450,6 +450,18 @@ summary {
     margin: 0;
   }
 
+  .left{
+    width: 40%;
+  }
+
+  .center{
+    width: 30%;
+  }
+
+  .right{
+    width: 45%;
+  }
+
   header {
     box-shadow: none;
   }
@@ -482,5 +494,16 @@ summary {
   .dropdown {
     display: none;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .dropdown{
+    display: none;
+  }
+
+  .center input{
+    width: 135px;
+  }
+
 }
 
