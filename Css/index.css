@@ -710,20 +710,21 @@ footer {
   header i {
     margin: 4px;
     padding: 2px;
+    font-size: 11px;
   }
 
   header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     box-shadow: none;
+    align-items: center;
   }
 
   #youtube-icon {
     padding: 0;
   }
-
-  .right button {
-    margin-right: 5px;
-  }
-
+  
   .btn-search {
     border-radius: 15px;
   }
